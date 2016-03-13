@@ -4,6 +4,9 @@
   assert:
     that: ansible_os_family == "RedHat"
 
+- name: Install EPEL repository
+  yum: name=epel-release state=present
+
 - name: Install Collectd RPM package
   yum:
     name: "{{ collectd_pkg }}"
