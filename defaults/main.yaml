@@ -36,7 +36,7 @@ collectd_global_options_default:
     - Timeout:  "{{ collectd_global_options_default_timeout }}"
     - ReadThreads: "{{ collectd_global_options_default_readthreads }}"
     - AutoLoadPlugin: "{{ collectd_global_options_default_autoloadplugin }}"
-    - TypesDB: "{{ pico_collectd_global_options_default_typesdb }}"
+    - TypesDB: "{{ collectd_global_options_default_typesdb }}"
 
 
 # Syslog plugin
