@@ -20,7 +20,7 @@
   yum:
     name: "{{ item }}"
     state: present
-  with_items: collectd_pkg_plugins
+  with_items: "{{collectd_pkg_plugins}}"
   notify:
     - Restart collectd service
   tags:
